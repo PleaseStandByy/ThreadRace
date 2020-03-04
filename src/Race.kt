@@ -9,7 +9,6 @@ class Race {
         val nameFile = "race_logs.txt"
         val file = File(nameFile)
         file.printWriter()
-        raceIsFinish
         val callBack = object : WriteToFileCallBack{
             override fun writeToLog(threadName: String, i: Int) {
                 if(i == MAX) {
